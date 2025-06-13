@@ -1,0 +1,119 @@
+<body>
+
+    <header class="profile-main">
+        <div class="ocean-background"></div> {/* 바다 배경 효과를 위한 div */}
+        <div class="profile-photo">
+            <img src="" alt="김민서님의 프로필 사진">
+        </div>
+        <p>&copy; 2024 김민서. All Rights Reserved.</p>
+    </footer>
+
+    {/* 물고기 요소들 (CSS와 JS로 제어) */}
+    <div class="fish fish1">🐠<<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김민서님의 프로필 페이지</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="profile-header">
+        <div class="profile-photo">
+            <img src="placeholder.jpg" alt="김민서님의 프로필 사진"> {/* 실제 프로필 이미지 경로로 변경해주세요 */}
+        </div>
+        <h1 class="profile-name">김민서</h1>
+        <p class="profile-bio">나를 한마디로 표현한다면? ✨ #MZ #프로필 #갓생</p>
+    </header>
+
+    <main class="profile-main">
+        <section class="section" id="about">
+            <h2><i class="fas fa-user-circle" aria-hidden="true"></i> 소개 (About Me)</h2>
+            <p>안녕하세요! 이곳에 여러분의 매력적인 스토리를 들려주세요. 어떤 경험을 했고, 무엇을 잘하며, 어떤 꿈을 꾸고 있는지 자유롭게 표현해보세요. PRD의 상세 정보 섹션을 참고하여 내용을 풍부하게 채우고, 이모티콘도 활용해보세요! 😉</p>
+        </section>
+
+        <section class="section" id="skills">
+            <h2><i class="fas fa-cogs" aria-hidden="true"></i> 스킬 (Skills)</h2>
+            <div class="skills-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript (ES6+)</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                {/* TODO: [플레이스홀더] 여기에 더 많은 스킬 태그를 추가하세요. */}
+            </div>
+        </section>
+
+        <section class="section" id="portfolio">
+            <h2><i class="fas fa-briefcase" aria-hidden="true"></i> 포트폴리오 (Portfolio)</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="placeholder_project1.jpg" alt="첫 번째 프로젝트 대표 이미지"> {/* 실제 프로젝트 이미지로 변경 */}
+                    <div class="portfolio-item-content">
+                        <h3>프로젝트 제목 1</h3>
+                        <p>이 프로젝트는 어떤 문제를 해결했고, 어떤 기술을 사용했는지 간략히 설명해주세요.</p>
+                        <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">프로젝트 보기</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="placeholder_project2.jpg" alt="두 번째 프로젝트 대표 이미지"> {/* 실제 프로젝트 이미지로 변경 */}
+                    <div class="portfolio-item-content">
+                        <h3>프로젝트 제목 2</h3>
+                        <p>이 프로젝트만의 특별한 점이나 성과를 강조해보세요. #혁신 #결과</p>
+                        <a href="#" class="btn-link" target="_blank" rel="noopener noreferrer">프로젝트 보기</a>
+                    </div>
+                </div>
+                {/* TODO: [플레이스홀더] 필요하다면 더 많은 포트폴리오 항목을 여기에 추가하세요. */}
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2><i class="fas fa-envelope" aria-hidden="true"></i> 연락처 (Contact)</h2>
+            <p>이메일: <a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+            <p>전화번호: 010-1234-5678</p>
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub 프로필 방문하기"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn 프로필 방문하기"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/baekhyunee_exo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram 프로필 방문하기"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                {/* TODO: [플레이스홀더] 다른 소셜 미디어 링크가 있다면 추가하세요. */}
+            </div>
+        </section>
+
+        <section class="section" id="message-form">
+            <h2><i class="fas fa-paper-plane" aria-hidden="true"></i> 메시지 남기기</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">이름:</label>
+                    <input type="text" id="name" name="name" required placeholder="성함을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일:</label>
+                    <input type="email" id="email" name="email" required placeholder="답변받을 이메일을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="message">메시지:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="궁금한 점이나 하고 싶은 말을 남겨주세요"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">메시지 보내기</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="profile-footer">
+        <p>&copy; 2024 김민서. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/div>
+    <div class="fish fish2">🐡</div>
+    <div class="fish fish3">🐟</div>
+    {/* 필요에 따라 더 많은 물고기 추가 */}
+
+
+    <script src="script.js"></script>
+</body>
+</html>
